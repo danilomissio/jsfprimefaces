@@ -38,6 +38,8 @@ public interface InterfaceCrud<T> extends Serializable{
 	//Retorna um objeto buscando pelo id
 	Object findById(Class<T> entity, Long id) throws Exception; 
 	
+	public T findByPorId(Class<T> entity, Long id) throws Exception;
+	
 	List<T> findListByQueryDinamica(String s) throws Exception;
 	
 	//Executar update com HQL 
